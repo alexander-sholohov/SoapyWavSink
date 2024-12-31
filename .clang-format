@@ -1,0 +1,7 @@
+---
+Language:      Cpp
+BasedOnStyle:  Microsoft
+PackConstructorInitializers: NextLineOnly
+ColumnLimit:   140
+AlignEscapedNewlines: DontAlign
+InsertNewlineAtEOF:   true
