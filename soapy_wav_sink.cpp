@@ -70,7 +70,7 @@ class WavSinkDevice : public SoapySDR::Device
         SoapySDR::Kwargs m;
 
         m[SOAPY_FILE_NAME_KEY] = _file_name;
-        m["origin"] = "https://github.com/alexander-sholohov/SoapyAfedri";
+        m["origin"] = "https://github.com/alexander-sholohov/SoapyWavSink";
 
         return m;
     }
