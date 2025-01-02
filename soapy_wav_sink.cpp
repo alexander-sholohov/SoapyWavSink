@@ -217,7 +217,7 @@ class WavSinkDevice : public SoapySDR::Device
         if (desired_num_samples < _samples_sent + (int64_t)slice_size)
         {
             std::this_thread::sleep_for(5ms);
-            return 0;
+            return SOAPY_SDR_TIMEOUT;
         }
 
         // fill destination buffer
