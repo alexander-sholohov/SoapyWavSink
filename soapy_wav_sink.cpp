@@ -183,7 +183,7 @@ class WavSinkDevice : public SoapySDR::Device
         const WavStream *wav_stream = reinterpret_cast<const WavStream *>(stream);
 
         // default slice size
-        size_t slice_size = 32678;
+        size_t slice_size = (1 << 15); // 32768
 
         // The more sps we have the more slice size we need. The relationship is experimental.
         if (_audioFile.getSampleRate() > 1000000)
